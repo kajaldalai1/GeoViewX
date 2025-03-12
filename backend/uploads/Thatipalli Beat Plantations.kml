@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+   <Document>
+      <Style id="bsr">
+         <IconStyle>
+            <scale>1.0</scale>
+            <Icon>
+               <href>http://103.41.99.86//TGFMIS/Common/MapIcons/KMLIcon.png</href>
+            </Icon>
+         </IconStyle>
+         <LineStyle>
+            <width>3</width>
+            <color>ff0000ff</color>
+         </LineStyle>
+         <PolyStyle>
+            <color>51400FF</color>
+         </PolyStyle>
+      </Style>
+
+      <!-- Placemark for a Point -->
+      <Placemark>
+         <name>Sample Point</name>
+         <styleUrl>#bsr</styleUrl>
+         <Point>
+            <coordinates>78.4867,17.3850,0</coordinates> <!-- Longitude, Latitude, Altitude -->
+         </Point>
+      </Placemark>
+
+      <!-- Placemark for a Line -->
+      <Placemark>
+         <name>Sample Line</name>
+         <styleUrl>#bsr</styleUrl>
+         <LineString>
+            <coordinates>
+               78.4867,17.3850,0
+               78.4877,17.3860,0
+               78.4887,17.3870,0
+            </coordinates>
+         </LineString>
+      </Placemark>
+
+      <!-- Placemark for a Polygon -->
+      <Placemark>
+         <name>Sample Polygon</name>
+         <styleUrl>#bsr</styleUrl>
+         <Polygon>
+            <outerBoundaryIs>
+               <LinearRing>
+                  <coordinates>
+                     78.4867,17.3850,0
+                     78.4877,17.3855,0
+                     78.4887,17.3860,0
+                     78.4867,17.3850,0 <!-- Closing the polygon -->
+                  </coordinates>
+               </LinearRing>
+            </outerBoundaryIs>
+         </Polygon>
+      </Placemark>
+
+   </Document>
+</kml>
